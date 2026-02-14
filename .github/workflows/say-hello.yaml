@@ -1,0 +1,9 @@
+name: "Hello World!"
+
+on: workflow_dispatch
+
+jobs:
+    say_hello_in_bash:
+        runs-on: ubuntu-24.04
+        steps:
+            - run: echo "i am running in the bash of ubuntu"
