@@ -7,3 +7,8 @@ jobs:
         runs-on: ubuntu-24.04
         steps:
             - run: echo "i am running in the bash of ubuntu"
+    make-dir-happy:
+        runs-on: ubuntu-18.04
+        steps:
+            - run: mkdir -p ~/happy/is/best/doing
+            - run: uname -a
