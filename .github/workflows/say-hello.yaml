@@ -10,5 +10,7 @@ jobs:
     make-dir-happy:
         runs-on: ubuntu-18.04
         steps:
-            - run: mkdir -p ~/happy/is/best/doing
-            - run: uname -a
+            - name: make a directory
+              run: mkdir -p ~/happy/is/best/doing
+            - name: show the config of current running os
+              run: uname -a
