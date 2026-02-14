@@ -7,7 +7,6 @@ jobs:
         runs-on: ubuntu-24.04
         steps:
             - run: echo "i am running in the bash of ubuntu"
-jobs:
     make-dir-happy:
         runs-on: ubuntu-18.04
         steps:
