@@ -4,7 +4,7 @@ on:
         types: [opened]
 jobs:
     comment-with-action-module:
-        runs-on: ubuntu-lates
+        runs-on: ubuntu-latest
         steps:
             - name: dump github context
               run: echo '${{ toJson(github.event)}}' | jq
