@@ -1,0 +1,22 @@
+name: first-running-implementation-by-myself
+
+on:
+    push:
+        branches:
+            - main
+    pull_request:
+        branches:
+            - main
+jobs:
+    first-say-hi:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: HELLO world By Haps
+              run: echo "hey happy you did it"
+              shell: bash
+    second-job-good-bye:
+        runs-on: ubuntu-latest
+        steps:
+            - name: bye bye hero
+              run: echo "good bye buddy"
