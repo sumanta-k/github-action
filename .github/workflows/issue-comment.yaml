@@ -1,0 +1,11 @@
+name: when user create an issue , comment will appear
+on:
+    issues:
+        types: [opened]
+jobs:
+    comment-with-action-module:
+        runs-on: ubuntu-lates
+        steps:
+            - name: dump github context
+              run: echo '${{ toJson(github.event)}}' | jq
+              shell: bash
