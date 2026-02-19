@@ -2,6 +2,7 @@ name: when user create an issue , comment will appear
 on:
     issues:
         types: [opened]
+permissions: write-all
 jobs:
     comment-with-action-module:
         runs-on: ubuntu-latest
