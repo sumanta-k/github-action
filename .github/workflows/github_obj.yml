@@ -1,10 +1,10 @@
 name: github-object-descript
 on:
   push:
-    - branches: [main]
+    branches: [main]
 jobs:
-  name: github dump object
-  runs-on: ubuntu-latest
-  shell: bash
-  steps:
-    - run: echo ${{ toJSON(github) }}
+  dump-github-object:
+    name: github dump object
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo ${{ toJSON(github) }}
